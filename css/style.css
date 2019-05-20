@@ -13,7 +13,15 @@ h1 {
     font-size: 80px;
 }
 
-.btext {
+/* .logoImg{
+    content: url(https://www.flaktest.com/wp-content/uploads/2017/11/Streamline2-200x200.png)
+} */
+
+.container-logo{
+    
+}
+
+.header-container {
     color: #f4f4f4;
     position: absolute;
     text-align: center;
