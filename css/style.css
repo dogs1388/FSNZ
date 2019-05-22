@@ -20,13 +20,7 @@ h1 {
     font-size: 80px;
 }
 
-/* .logoImg{
-    content: url(https://www.flaktest.com/wp-content/uploads/2017/11/Streamline2-200x200.png)
-} */
-
-.container-logo {}
-
-.header-container {
+.particles-container {
     color: #f4f4f4;
     position: absolute;
     text-align: center;
@@ -39,7 +33,7 @@ h1 {
 .container1 {
     padding: 10%;
     background-color: aqua;
-    height: 200px;
+    
 }
 
 .logoText {
@@ -49,8 +43,8 @@ h1 {
 }
 
 #particles-js {
-    background-image: url('https://images.wallpaperscraft.com/image/black_background_lines_scratches_69440_1920x1080.jpg');
-    /* background-color: black; */
+    /* background-image: url('https://images.wallpaperscraft.com/image/black_background_lines_scratches_69440_1920x1080.jpg'); */
+    background-color: rgb(11, 21, 33);
     background-repeat: no-repeat;
     /* background-size: 1920px 720px; */
 
