@@ -3,6 +3,13 @@
     src: url(fonts\batmfo__.ttf)
 }
 
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -17,9 +24,7 @@ h1 {
     content: url(https://www.flaktest.com/wp-content/uploads/2017/11/Streamline2-200x200.png)
 } */
 
-.container-logo{
-    
-}
+.container-logo {}
 
 .header-container {
     color: #f4f4f4;
@@ -44,9 +49,9 @@ h1 {
 }
 
 #particles-js {
-    background-image: url('https://images.wallpaperscraft.com/image/dark_black_and_white_abstract_black_background_76353_1920x1080.jpg');
+    background-image: url('https://images.wallpaperscraft.com/image/black_background_lines_scratches_69440_1920x1080.jpg');
     /* background-color: black; */
     background-repeat: no-repeat;
     /* background-size: 1920px 720px; */
-    
+
 }
