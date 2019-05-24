@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="css/nav.css">
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     <link rel="stylesheet" href="css/w3-css.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src='script/app.js'></script>
+    <script src="script/sidebar.js"></script>
     <title>Streamline</title>
 </head>
 
@@ -16,9 +21,56 @@
     <div class="wrapper">
         <!-- Particle.js -->
         <div id="particles-js">
+
+            <div id="sidebar">
+                <div class="toggle-btn" onclick="toggleSidebar()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </li>
+                </ul>
+
+
+
+
+
+
+
+                <!-- <div class="dropdown">
+                    
+                    <button class="dropbtn">Home</button>
+                    <div class="dropdown-content" >
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div> -->
+                <!--                 
+                <ul>
+                    <li>Home</li>
+                    <li>Chapters</li>
+                    <li>Guides</li>
+                    <li>Resources</li>
+                    <li>Contact us</li>
+                </ul> -->
+
+            </div>
             <div class="particles-container">
                 <h1 class="logoText">Neural Network Dynamics</h1>
-                <p class="logoText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, aspernatur!</p>
+                <p class="logoText">We are going to teach you </p>
             </div>
         </div>
         <div class="container1">
