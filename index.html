@@ -3,11 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- CSS Links -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     <link rel="stylesheet" href="css/w3-css.css">
-    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src='script/app.js'></script>
     <script src="script/sidebar.js"></script>
@@ -19,25 +23,30 @@
 
 <body>
     <div class="wrapper">
+
         <!-- Particle.js -->
         <div id="particles-js">
+
             <div id="sidebar">
                 <div class="toggle-btn" onclick="toggleSidebar()">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
+
                 <ul>
                     <li><a href="index.html">Home</a></li>
+
                     <li class="dropdown">
                         <a href="javascript:void(0)" class="dropbtn">Chapters<i class="fa fa-caret-down"></i></a>
                         <div class="dropdown-content">
-                            <a href="#">Basic Features</a>
-                            <a href="#">Web Browsers</a>
-                            <a href="#">Electronic mail</a>
-                            <a href="#">Internet publishing</a>
+                            <a href="BasicFeatures.html">Basic Features</a>
+                            <a href="WebBrowsers.html">Web Browsers</a>
+                            <a href="ElectronicMail.html">Electronic mail</a>
+                            <a href="InternetPublishing.html">Internet publishing</a>
                         </div>
                     </li>
+
                     <li class="dropdown">
                         <a href="javascript:void(1)" class="dropbtn">Guides<i class="fa fa-caret-down"></i></a>
                         <div class="dropdown-content">
@@ -50,22 +59,204 @@
                     </li>
                     <li><a href="index.html">Contact us</a></li>
                 </ul>
+
             </div>
+
             <div class="particles-container">
-                <h1 class="logoText">Neural Network Dynamics</h1>
-                <p class="logoText">We are going to teach you </p>
-            </div>
-        </div>
-        <div class="container1">
-            <div class="operating-sys">
-                
-            </div>
-            <div class="tools">
-
+                <h1 class="logoText">STACK<span style='color: orangered'>HOUNDS</span></h1>
+                <!-- <p class="logoText">We are going to teach you </p> -->
             </div>
 
         </div>
 
+        <div class="main-container">
+            <div class="overview">
+                <h1>An Overview</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dicta ipsam, at aliquid eius repellendus
+                    dolorem qui odit asperiores et ut. Maiores natus in pariatur ea excepturi iure ex, alias est
+                    accusamus odit quas atque vero nemo repudiandae magnam recusandae non sapiente quos tempora. Facere
+                    fugiat, dolor ab labore expedita commodi quos corrupti veniam quam, sunt voluptates eius velit sed
+                    tempore! Corporis ab perferendis reprehenderit officiis, illum veritatis cumque tenetur!</p>
+            </div>
+
+            <!-- <div class="table-of-contents">
+                <h1>Table of Contents</h1>
+                <div class="ToC-chapters">
+                    <h2>Book Chapters</h2>
+                    <a href="">Basic Features</a>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, natus.</p>
+                    <a href="">Web Browsers</a>
+                    <a href="">Electronic Mail</a>
+                    <a href="">Internet Publishing</a>
+                </div>
+                <h2>Guides</h2>
+                <a href="">Basic Features</a>
+                <a href="">Web Browsers</a>
+                <a href="">Electronic Mail</a>
+                <a href="">Internet Publishing</a>
+            </div> -->
+
+            <div class="services-section">
+                <div class="inner-width">
+                    <h1 class="section-title">Chapter 11 Summary</h1>
+                    <div class="border"></div>
+                    <div class="services-container">
+
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <div class="service-title">Basic Features</div>
+                            <div class="service-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro,
+                                nihil.
+                            </div>
+                        </div>
+
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="service-title">Web Browsers</div>
+                            <div class="service-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro,
+                                nihil.
+                            </div>
+                        </div>
+
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <i class="fas fa-brush"></i>
+                            </div>
+                            <div class="service-title">Electronic Mail</div>
+                            <div class="service-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro,
+                                nihil.
+                            </div>
+                        </div>
+
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <i class="fas fa-object-ungroup"></i>
+                            </div>
+                            <div class="service-title">Internet Publishing</div>
+                            <div class="service-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro,
+                                nihil.
+                            </div>
+                        </div>
+
+                        <!-- <div class="service-box">
+                            <div class="service-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="service-title">Databases</div>
+                            <div class="service-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro,
+                                nihil.
+                            </div>
+                        </div>
+
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <div class="service-title">Android</div>
+                            <div class="service-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro,
+                                nihil.
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="services-section">
+                <div class="inner-width">
+                    <h1 class="section-title">Guides / Resources</h1>
+                    <div class="border"></div>
+                    <div class="services-container">
+
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <div class="service-title">Ubuntu Linux in VM</div>
+                            <div class="service-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro,
+                                nihil.
+                            </div>
+                        </div>
+
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="service-title">Ubuntu for Development</div>
+                            <div class="service-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro,
+                                nihil.
+                            </div>
+                        </div>
+
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <i class="fas fa-brush"></i>
+                            </div>
+                            <div class="service-title">Particle.js Library</div>
+                            <div class="service-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro,
+                                nihil.
+                            </div>
+                        </div>
+
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <i class="fas fa-object-ungroup"></i>
+                            </div>
+                            <div class="service-title">Python MatPlotLib Library</div>
+                            <div class="service-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro,
+                                nihil.
+                            </div>
+                        </div>
+
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="service-title">Java Development Environment</div>
+                            <div class="service-desc">
+                                Set up a Java development environment (JDK, IDE, CMD) and write a "Hello World" program.
+                            </div>
+                        </div>
+
+                        <div class="service-box">
+                            <div class="service-icon">
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <div class="service-title">Snake Game in Java</div>
+                            <div class="service-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eaque ratione rem porro,
+                                nihil.
+                            </div>
+                        </div>
+
+                        <div class="service-box">
+                                <div class="service-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="service-title">Learn Computer Science</div>
+                                <div class="service-desc">
+                                    Open-source Computer Science course
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 </body>
 
