@@ -1,30 +1,20 @@
 /* CSS VARIABLES */
 :root {
   --base01: rgb(11, 21, 33);
-  --base02: #0d0d0d;
+  --base02: rgb(8, 16, 26);
   --text01: #ffffff;
-  --cl001: rgb(27, 6, 11);
 }
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Ubuntu', 'sans-serif';
 }
 
 body {
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
   font-size: 16px;
 }
 
-h1 {
-  /* text-decoration: underline; */
-}
-
-h2 {}
-
-h3 {}
 
 
 p {
@@ -42,14 +32,12 @@ p {
 /* ..................................... */
 
 #particles-js {
-  /* background-image: url('img/the-dark-creatures-are-coming-1920x1080_95575-mm-90.jpg'); */
+  /* background-image: url('img/background-3883181_1280.jpg'); */
   /* background-color: var(--base01); */
   background-repeat: no-repeat;
   background-size: cover;
   /* background-size: 1920px 1080px; */
-
 }
-
 
 
 
@@ -76,13 +64,10 @@ p {
   border-bottom: 1px solid rgba(104, 104, 104, 0.3)
 }
 
-
 #sidebar .toggle-btn {
   position: absolute;
   left: 230px;
   top: 20px;
-
-
 }
 
 #sidebar .toggle-btn span {
@@ -93,7 +78,6 @@ p {
   background: #fff;
   margin: 3px 0px;
 }
-
 
 li a,
 .dropbtn {
@@ -117,11 +101,9 @@ li.dropdown {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: var(--base01);
+  background-color: rgba(11, 17, 33,1);
   min-width: 160px;
-  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
-  /* z-index: 1; */
-}
+  }
 
 .dropdown-content a {
   color: var(--text01);
@@ -145,6 +127,7 @@ li.dropdown {
 }
 
 
+
 /* ................................... */
 /* Header/Banner Container */
 
@@ -158,7 +141,8 @@ li.dropdown {
 }
 
 .particles-container h1 {
-  font-size: 80px;
+  font-size: 6rem;
+  font-style: italic;
 }
 
 .logoText {
@@ -166,6 +150,7 @@ li.dropdown {
   padding: 2rem;
   letter-spacing: 0.3rem;
 }
+
 
 
 /* ............................... */
@@ -181,45 +166,21 @@ li.dropdown {
 .overview {
   padding-bottom: 3%;
 }
-/* 
-.table-of-contents {
-  padding-bottom: 3%;
+
+.container {
+  font-size: 1rem;
+  padding-bottom: 5%;
 }
 
-.ToC-chapters {
-  padding-bottom: 3%;
-}
-
-.ToC-chapters h2 {
-  padding-bottom: 0.9rem;
-}
-
-.ToC-chapters a {
-  font-size: 15px;
-  text-decoration: none;
-  color: var(--text01);
-  background-color: var(--cl001);
-  padding: 16px;
-  display: inline-block;
-  text-align: left;
-} */
-
-
-
-
-.footer {
-  margin-top: 2rem;
-  background: var(--base01);
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
+.container ul li {
+  margin: 20px 5%;
+  font-size: 1.1rem;
 }
 
 
-
+/* ................................. */
+/* Services - Chapters and Guides */
 .services-section {
-  background: url(bg.jpg);
-  background-size: cover;
   padding: 70px 0;
 }
 
@@ -277,6 +238,11 @@ li.dropdown {
   font-size: 26px;
 }
 
+.service-icon a{
+  text-decoration: none;
+  color: #82ccdd;
+}
+
 .service-box:hover .service-icon {
   background: #82ccdd;
   color: #ddd;
@@ -308,4 +274,18 @@ li.dropdown {
   .service-box {
     max-width: 100%;
   }
+}
+
+
+
+/* .................................. */
+/* Footer */
+footer {
+  font-family: 'Ubuntu', 'sans-serif';
+  font-style: italic;
+  margin-top: 2rem;
+  background: var(--base02);
+  color: var(--text01);
+  text-align: center;
+  padding: 1rem;
 }
