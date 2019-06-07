@@ -58,6 +58,7 @@ p {
 }
 
 #sidebar ul li {
+  font-size: 1.3rem;
   color: rgba(230, 230, 230, 0.9);
   list-style: none;
   padding: 15px 10px;
@@ -111,6 +112,7 @@ li.dropdown {
   text-decoration: none;
   display: block;
   text-align: left;
+  font-size: 1.1rem;
 }
 
 .dropdown-content a:hover {
@@ -166,10 +168,21 @@ li.dropdown {
 .overview {
   padding-bottom: 3%;
 }
+code {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1rem;
+  background-color: var(--base02);
+  padding: 3px 20px;
 
+}
 .container {
   font-size: 1rem;
   padding-bottom: 5%;
+}
+
+.container a{
+  text-decoration: underline;
+  color: grey;  
 }
 
 .container ul li {
@@ -203,6 +216,7 @@ li.dropdown {
   width: 160px;
   height: 2px;
   background: #82ccdd;
+  /* background: #ff4500; */
   margin: 40px auto;
 }
 
@@ -225,7 +239,9 @@ li.dropdown {
   width: 70px;
   height: 70px;
   border: 3px solid #82ccdd;
+  /* border: 3px solid #ff4500; */
   color: #82ccdd;
+  /* color:#ff4500; */
   transform: rotate(45deg);
   margin-bottom: 30px;
   margin-top: 16px;
@@ -241,10 +257,12 @@ li.dropdown {
 .service-icon a{
   text-decoration: none;
   color: #82ccdd;
+  /* color: #ff4500; */
 }
 
 .service-box:hover .service-icon {
   background: #82ccdd;
+  /* background: #ff4500; */
   color: #ddd;
 }
 
