@@ -1,312 +1,370 @@
 /* CSS VARIABLES */
 :root {
-  --base01: rgb(11, 21, 33);
-  --base02: rgb(8, 16, 26);
-  --text01: #ffffff;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  margin: 0;
-  font-size: 16px;
-}
-
-
-
-p {
-  margin: 20px 0px;
-  line-height: 2rem;
-  font-size: 1.2rem;
-}
-
-.wrapper {
-  background-color: var(--base01);
-  height: 100%
-}
-
-
-/* Particles js background */
-/* ..................................... */
-
-#particles-js {
-  /* background-image: url('img/background-3883181_1280.jpg'); */
-  /* background-color: var(--base01); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* background-size: 1920px 1080px; */
-}
-
-
-
-/* Side bar Navigation */
-/* .................................. */
-
-#sidebar {
-  position: fixed;
-  width: 200px;
-  height: 100%;
-  background: rgba(15, 28, 45, 0.7);
-  left: -200px;
-  transition: all 500ms linear;
-}
-
-#sidebar.active {
-  left: 0px;
-}
-
-#sidebar ul li {
-  font-size: 1.3rem;
-  color: rgba(230, 230, 230, 0.9);
-  list-style: none;
-  padding: 15px 10px;
-  border-bottom: 1px solid rgba(104, 104, 104, 0.3)
-}
-
-#sidebar .toggle-btn {
-  position: absolute;
-  left: 230px;
-  top: 20px;
-}
-
-#sidebar .toggle-btn span {
-  display: block;
-  width: 30px;
-  height: 5px;
-  border-radius: 20px;
-  background: #fff;
-  margin: 3px 0px;
-}
-
-li a,
-.dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: left;
-  padding: 14px 16px;
-  text-decoration: none;
-  width: 150px;
-}
-
-li a:hover,
-.dropdown:hover .dropbtn {
-  background-color: var(--base01);
-}
-
-li.dropdown {
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: rgba(11, 17, 33,1);
-  min-width: 160px;
+    --base01: rgb(11, 21, 33);
+    --base02: rgb(8, 16, 26);
+    --text01: #ffffff;
   }
-
-.dropdown-content a {
-  color: var(--text01);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  font-size: 1.1rem;
-}
-
-.dropdown-content a:hover {
-  background-color: grey;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.fa-caret-down {
-  float: right;
-  padding-right: 8px;
-}
-
-
-
-/* ................................... */
-/* Header/Banner Container */
-
-.particles-container {
-  color: #f4f4f4;
-  position: absolute;
-  text-align: center;
-  top: 45%;
-  width: 100%;
-  line-height: 0.4rem;
-}
-
-.particles-container h1 {
-  font-size: 6rem;
-  font-style: italic;
-}
-
-.logoText {
-  font-family: 'Orbitron', sans-serif;
-  padding: 2rem;
-  letter-spacing: 0.3rem;
-}
-
-
-
-/* ............................... */
-/* Main Container */
-.main-container {
-  /* height: 17; */
-  margin: 2% 20%;
-  font-family: 'Ubuntu', 'sans-serif';
-  color: #fff;
-
-}
-
-.overview {
-  padding-bottom: 3%;
-}
-code {
-  font-family: 'Source Code Pro', monospace;
-  font-size: 1rem;
-  background-color: var(--base02);
-  padding: 3px 20px;
-
-}
-.container {
-  font-size: 1rem;
-  padding-bottom: 5%;
-}
-
-.container a{
-  text-decoration: underline;
-  color: grey;  
-}
-
-.container ul li {
-  margin: 20px 5%;
-  font-size: 1.1rem;
-}
-
-
-/* ................................. */
-/* Services - Chapters and Guides */
-.services-section {
-  padding: 70px 0;
-}
-
-.inner-width {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
-  overflow: hidden;
-}
-
-.section-title {
-  text-align: center;
-  color: #ddd;
-  text-transform: uppercase;
-  font-size: 30px;
-}
-
-.border {
-  width: 160px;
-  height: 2px;
-  background: #82ccdd;
-  /* background: #ff4500; */
-  margin: 40px auto;
   
-}
-
-.services-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.service-box {
-  max-width: 20%;
-  padding: 10px;
-  text-align: center;
-  color: #ddd;
-  cursor: pointer;
-}
-
-.service-icon {
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-  border: 3px solid #82ccdd;
-  /* border: 3px solid #ff4500; */
-  color: #82ccdd;
-  /* color:#ff4500; */
-  transform: rotate(45deg);
-  margin-bottom: 30px;
-  margin-top: 16px;
-  transition: 0.3s linear;
-}
-
-.service-icon i {
-  line-height: 70px;
-  transform: rotate(-45deg);
-  font-size: 26px;
-}
-
-.service-icon a{
-  text-decoration: none;
-  color: #82ccdd;
-  /* color: #ff4500; */
-}
-
-.service-box:hover .service-icon {
-  background: #82ccdd;
-  /* background: #ff4500; */
-  color: #ddd;
-}
-
-.service-title {
-  font-size: 18px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
-
-.service-desc {
-  font-size: 14px;
-}
-
-@media screen and (max-width:960px) {
-  .service-box {
-    max-width: 45%;
+  * {
+    margin: 0;
+    padding: 0;
   }
-}
-
-@media screen and (max-width:768px) {
-  .service-box {
-    max-width: 50%;
+  
+  body {
+    margin: 0;
+    font-size: 16px;
   }
-}
-
-@media screen and (max-width:480px) {
-  .service-box {
-    max-width: 100%;
+  
+  
+  
+  p {
+    margin: 20px 0px;
+    line-height: 2rem;
+    font-size: 1.2rem;
   }
-}
+  
+  .wrapper {
+    background-color: var(--base01);
+    height: 100%
+  }
+  
+  
+  /* Particles js background */
+  /* ..................................... */
+  
+  #particles-js {
+    /* background-image: url('img/background-3883181_1280.jpg'); */
+    /* background-color: var(--base01); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: 1920px 1080px; */
+  }
+  
+  
+  
+  /* Side bar Navigation */
+  /* .................................. */
+  
+  #sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: rgba(15, 28, 45, 0.7);
+    left: -200px;
+    transition: all 500ms linear;
+  }
+  
+  #sidebar.active {
+    left: 0px;
+  }
+  
+  #sidebar ul li {
+    font-size: 1.3rem;
+    color: rgba(230, 230, 230, 0.9);
+    list-style: none;
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(104, 104, 104, 0.3)
+  }
+  
+  #sidebar .toggle-btn {
+    position: absolute;
+    left: 230px;
+    top: 20px;
+  }
+  
+  #sidebar .toggle-btn span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    border-radius: 20px;
+    background: #fff;
+    margin: 3px 0px;
+  }
+  
+  li a,
+  .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 150px;
+  }
+  
+  li a:hover,
+  .dropdown:hover .dropbtn {
+    background-color: var(--base01);
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(11, 17, 33,1);
+    min-width: 160px;
+    }
+  
+  .dropdown-content a {
+    color: var(--text01);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 1.1rem;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: grey;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+  
+  
+  
+  /* ................................... */
+  /* Header/Banner Container */
+  
+  .particles-container {
+    color: #f4f4f4;
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    width: 100%;
+    line-height: 0.4rem;
+  }
+  
+  .particles-container h1 {
+    font-size: 6rem;
+    font-style: italic;
+  }
+  
+  .logoText {
+    font-family: 'Orbitron', sans-serif;
+    padding: 2rem;
+    letter-spacing: 0.3rem;
+  }
+  
+  
+  
+  /* ............................... */
+  /* Main Container */
+  .main-container {
+    /* height: 17; */
+    margin: 2% 20%;
+    font-family: 'Ubuntu', 'sans-serif';
+    color: #fff;
+  
+  }
+  
+  .overview {
+    padding-bottom: 3%;
+  }
+  code {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1rem;
+    background-color: var(--base02);
+    padding: 3px 20px;
+  
+  }
+  .container {
+    font-size: 1rem;
+    padding-bottom: 5%;
+  }
+  
+  .container a{
+    text-decoration: underline;
+    color: grey;  
+  }
+  
+  .container ul li {
+    margin: 20px 5%;
+    font-size: 1.1rem;
+  }
+  
+  
+  /* ................................. */
+  /* Services - Chapters and Guides */
+  .services-section {
+    padding: 70px 0;
+  }
+  
+  .inner-width {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  
+  .section-title {
+    text-align: center;
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  
+  .border {
+    width: 160px;
+    height: 2px;
+    background: #c9cbcc;
+    /* background: #ff4500; */
+    margin: 40px auto;
+    
+  }
+  
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .service-box {
+    max-width: 20%;
+    padding: 10px;
+    text-align: center;
+    color: #ddd;
+    cursor: pointer;
+  }
+  
+  .service-icon {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border: 3px solid #82ccdd;
+    /* border: 3px solid #ff4500; */
+    color: #82ccdd;
+    /* color:#ff4500; */
+    transform: rotate(45deg);
+    margin-bottom: 30px;
+    margin-top: 16px;
+    transition: 0.3s linear;
+  }
+  
+  .service-icon i {
+    line-height: 70px;
+    transform: rotate(-45deg);
+    font-size: 26px;
+  }
+  
+  .service-icon a{
+    text-decoration: none;
+    color: #82ccdd;
+    /* color: #ff4500; */
+  }
+  
+  .service-box:hover .service-icon {
+    background: #82ccdd;
+    /* background: #ff4500; */
+    color: #ddd;
+  }
+  
+  .service-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .service-desc {
+    font-size: 14px;
+  }
+  
+  @media screen and (max-width:960px) {
+    .service-box {
+      max-width: 45%;
+    }
+  }
+  
+  @media screen and (max-width:768px) {
+    .service-box {
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (max-width:480px) {
+    .service-box {
+      max-width: 100%;
+    }
+  }
+  
+  
+  
+  /* .................................. */
+  /* Footer */
+  /* footer {
+    font-family: 'Ubuntu', 'sans-serif';
+    font-style: italic;
+    margin-top: 2rem;
+    background: var(--base02);
+    color: var(--text01);
+    text-align: center;
+    padding: 1rem;
+    width: 100%
+  } */
 
-
-
-/* .................................. */
-/* Footer */
-/* footer {
-  font-family: 'Ubuntu', 'sans-serif';
-  font-style: italic;
-  margin-top: 2rem;
-  background: var(--base02);
-  color: var(--text01);
-  text-align: center;
-  padding: 1rem;
-  width: 100%
-} */
+  body{
+    margin: 0;
+    padding: 0;
+    background: rgb(11, 21, 33);;
+  }
+  .loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .obj{
+    width: 6px;
+    height: 40px;
+    background: white;
+    margin: 0 3px;
+    border-radius: 10px;
+    animation: loading 0.8s infinite;
+  }
+  .obj:nth-child(2){
+    animation-delay: 0.1s;
+  }
+  .obj:nth-child(3){
+    animation-delay: 0.2s;
+  }
+  .obj:nth-child(4){
+    animation-delay: 0.3s;
+  }
+  .obj:nth-child(5){
+    animation-delay: 0.4s;
+  }
+  .obj:nth-child(6){
+    animation-delay: 0.5s;
+  }
+  .obj:nth-child(7){
+    animation-delay: 0.6s;
+  }
+  .obj:nth-child(8){
+    animation-delay: 0.7s;
+  }
+  
+  
+  @keyframes loading {
+    0%{
+      height: 0;
+    }
+    50%{
+      height: 40px;
+    }
+    100%{
+      height: 0;
+    }
+  }
+  
